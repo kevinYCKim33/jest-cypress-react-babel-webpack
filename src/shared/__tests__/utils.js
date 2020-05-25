@@ -9,4 +9,4 @@ test('formats the value', () => {
 // there's a slight performance hit here
 // npm t -- --env=node << running this will actually break window NOT defined error since it skips out on jsdom
 // see jest.config.js to see how to explicitly define testEnvironment
-console.log(window)
+// console.log(window)

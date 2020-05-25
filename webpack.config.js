@@ -1,5 +1,6 @@
 const path = require('path')
 
+// css loading is handled in old school webpack
 module.exports = {
   entry: './src/index.js',
   output: {
