@@ -11,5 +11,6 @@ module.exports = {
     '\\.module\\.css$': 'identity-obj-proxy',
     '\\.css$': require.resolve('./test/style-mock.js'),
   },
-  snapshotSerializers: ['jest-emotion'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  snapshotSerializers: ['jest-emotion'], // handles snapshotting emotion based css classes better
 }
