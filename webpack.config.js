@@ -8,7 +8,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    modules: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+    modules: ['node_modules', path.join(__dirname, 'src'), 'shared'], // anything in shared directory can import like it's a node module!
   },
   module: {
     rules: [
